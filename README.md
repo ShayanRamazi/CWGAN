@@ -67,8 +67,7 @@ Use a new loss function derived from the Wasserstein distance, no logarithm anym
 Empirically the authors recommended RMSProp optimizer on the critic, rather than a momentum based optimizer such as Adam which could cause instability in the model training. I haven’t seen clear theoretical explanation on this point through.
 Sadly, Wasserstein GAN is not perfect. Even the authors of the original WGAN paper mentioned that “Weight clipping is a clearly terrible way to enforce a Lipschitz constraint” (Oops!). WGAN still suffers from unstable training, slow convergence after weight clipping (when clipping window is too large), and vanishing gradients (when clipping window is too small).
 
-Some improvement, precisely replacing weight clipping with gradient penalty, has been discussed in Gulrajani et al. 2017. I will leave this to a future post.
-### Our implementation
+Some improvement, precisely replacing weight clipping with gradient penalty, has been discussed in Gulrajani et al. 2017.
 Our implementation is done in the keras framework. It uses the MNIST database
 
 ![alt text](http://s7.picofile.com/file/8390707792/mnist_29990.png)
