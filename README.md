@@ -1,4 +1,8 @@
 # Conditional Wasserstein GAN (WGAN)
+
+[![N|Solid](http://s6.picofile.com/file/8391972092/z.png)](https://ramazi.ir)
+
+
 ### What is Wasserstein distance?
 
 Wasserstein Distance is a measure of the distance between two probability distributions. It is also called Earth Mover’s distance, short for EM distance, because informally it can be interpreted as the minimum energy cost of moving and transforming a pile of dirt in the shape of one probability distribution to the shape of the other distribution. The cost is quantified by: the amount of dirt moved x the moving distance.
